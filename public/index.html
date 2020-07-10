@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>ShortURl</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        * {
+            padding: 1%;
+        }
+
+        form {
+            background-color: mediumseagreen;
+            width: 300px;
+            height: 150px;;
+            margin: 0 auto;
+            padding: 5%
+        }
+
+        body {
+            background-color: grey;
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            background-color: grey;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+        }
+
+        tr {
+            padding: 2%;
+        }
+
+        .message {
+           font-weight: bolder;
+        }
+    </style>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1> Short URLS here</h1>
+    </header>
+    <main>
+        <form id="formElem" onsubmit="event.preventDefault(); submitAction()">
+            <table>
+                <tr>
+                    <td><label for="url">Original URL</label></td>
+                    <td><input type="text" name="url"></input></td>
+                </tr>
+                <tr>
+                    <td><label for="slug">Slug</label></td>
+                    <td><input type="text" name="slug"></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Submit</button></td>
+                </tr>
+            </table>
+            <span id="message"></span>
+        </form>
+    </main>
+</body>
+
+</html>
