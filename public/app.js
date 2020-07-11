@@ -1,7 +1,7 @@
 async function submitAction() {
     console.log('submit');
 
-    const url = 'http://localhost:1337/url';
+    const url = 'https://url-shortner-three.vercel.app/url';
     const formData = new FormData(formElem);
     const data = {
         "url": formData.get('url'),
