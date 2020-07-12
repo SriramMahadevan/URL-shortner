@@ -1,7 +1,7 @@
 async function submitAction() {
     console.log('submit');
 
-    const url = 'https://url-shortner-three.vercel.app/url';
+    const url = 'https://slugit.herokuapp.com/url';
     const formData = new FormData(formElem);
     const data = {
         "url": formData.get('url'),
